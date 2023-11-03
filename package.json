@@ -5,7 +5,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --coverage --transformIgnorePatterns \"node_modules/(?!@bundled-es-modules)/\"",
+    "test": "react-scripts test --watchAll --transformIgnorePatterns \"node_modules/(?!@bundled-es-modules)/\"",
     "eject": "react-scripts eject"
   },
   "dependencies": {

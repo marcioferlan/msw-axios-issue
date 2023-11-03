@@ -5,7 +5,7 @@ import { HttpResponse, http } from 'msw';
 import { setupServer } from 'msw/node';
 import Posts from './Posts';
 
-const endpoint = (uri) => new URL(uri, 'https://api.example.com').toString();
+const endpoint = (uri) => new URL(uri, 'https://jsonplaceholder.typicode.com').toString();
 
 const handlers = [
   http.get(endpoint('/posts'), () => {

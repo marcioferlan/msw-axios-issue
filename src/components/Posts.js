@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useQuery } from '@tanstack/react-query';
 
 const api = axios.create({
-  baseURL: 'https://api.example.com',
+  baseURL: 'https://jsonplaceholder.typicode.com',
 });
 
 export default function Posts() {
@@ -21,10 +21,13 @@ export default function Posts() {
   });
   
   return (
-     <ul>
+    <div>
+      <h1>Posts</h1>
+      <ul>
         {data?.map((post) => (
           <li key={post.id}>Post {post.id}</li>
-        ))}
-     </ul>
+          ))}
+      </ul>
+    </div>
   )
 }
